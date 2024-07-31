@@ -63,12 +63,10 @@ Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için [LICENSE](L
 ## Teşekkür
 
 - [Spotify](https://www.spotify.com) platformundan ilham alınmıştır.
-- Müzik verileri [API Adı](API URL) tarafından sağlanmaktadır.
+- Müzik verileri [RapidApi](https://rapidapi.com/Glavier/api/spotify23/playground/apiendpoint_1dc51f1b-a2c6-4f9a-9c6c-32019c7301b2) tarafından sağlanmaktadır.
 
 ## İletişim
 
 Herhangi bir soru veya görüşleriniz için lütfen [email adresiniz] ile iletişime geçin.
 
 ---
-
-Yer imlerini ve `[email adresiniz]`, `kullaniciadi`, `API Adı`, `API URL` gibi bilgileri kendi bilgilerinize göre güncellemeyi unutmayın. Ayrıca, ekran görüntüleri, "Bilinen Sorunlar" veya "Gelecekteki Geliştirmeler" gibi ek bölümler ekleyebilir ve daha fazla ayrıntı ekleyebilirsiniz.

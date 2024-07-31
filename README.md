@@ -67,6 +67,6 @@ Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için [LICENSE](L
 
 ## İletişim
 
-Herhangi bir soru veya görüşleriniz için lütfen [email adresiniz] ile iletişime geçin.
+Herhangi bir soru veya görüşleriniz için lütfen [buradan](cengoaydemir14@gmail.com) ile iletişime geçin.
 
 ---

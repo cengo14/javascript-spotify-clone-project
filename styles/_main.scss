@@ -1,0 +1,152 @@
+main {
+  background-color: $card-background;
+  width: 100%;
+  margin: 10px;
+  border-radius: $radius;
+  header {
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background: $color;
+      margin: 10px;
+      border-radius: $radius;
+      gap: 40px;
+      #menu {
+        display: none;
+        font-size: 28px;
+        margin-right: 15px;
+        cursor: pointer;
+        color: $text;
+        @include ipad {
+          display: flex;
+        }
+      }
+      @include ipad {
+        padding: 12px 0 12px 5px;
+        margin: 10px 0 1px 5px;
+      }
+      .search-input {
+        position: relative;
+        input {
+          background: black;
+          border: none;
+          outline: none;
+          padding: 15px 20px;
+          border-radius: $radius;
+          width: 500px;
+          color: $text;
+          @include laptop {
+            width: 250px;
+          }
+          @include ipad-pro {
+            width: 300px;
+          }
+          @include ipad {
+            width: 350px;
+          }
+          &:focus {
+            box-shadow: 0 0 10px rgb(56, 56, 56);
+          }
+        }
+        i {
+          position: absolute;
+          right: 15px;
+          top: 10px;
+          color: $text;
+        }
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        @include ipad {
+          display: none;
+        }
+        :nth-child(4) {
+          background-color: $spotify-color;
+
+          border-radius: $radius;
+          color: black;
+          transition: 0.3s;
+          &:hover {
+            background: #159845;
+            scale: 0.98;
+          }
+        }
+        li {
+          white-space: nowrap;
+          padding: 8px;
+          font-size: 14px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .songs {
+    h2 {
+      padding: 10px;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 10px;
+      .card {
+        background: #121212;
+        width: 200px;
+        padding: 20px;
+        border-radius: $radius;
+        margin: 10px;
+        opacity: 0.7;
+        transition: all 0.3s;
+        cursor: pointer;
+        @include mobile-small {
+          width: 170px;
+        }
+        &:hover {
+          opacity: 1;
+          .play {
+            opacity: 1;
+            transform: translateY(-90px);
+          }
+        }
+        h4 {
+          margin-bottom: 6px;
+        }
+
+        figure {
+          position: relative;
+          img {
+            width: 100%;
+            border-radius: $radius;
+            margin-bottom: 10px;
+          }
+          .play {
+            background: $spotify-color;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            position: absolute;
+            right: 5px;
+            bottom: -20px;
+            opacity: 0;
+            transition: all 0.4s ease;
+            &:hover {
+              background: #159845;
+              scale: 1.1;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
